@@ -46,7 +46,12 @@ summary.aov(model1)
 ```
 
 The probability of obtaining these results is one out of ten thousand. Further analysis is required to determine which sets differ from one another.
+```{r}
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+The analysis indicates that the back seat data differs significantly from both the front and middle seat data. However, the middle seat and front seat data do not show significant difference from each other, but they are distinct  from the back seat data. 
 
 ## Conclusions
-
 
