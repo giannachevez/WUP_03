@@ -29,7 +29,13 @@ The boxes are not disjoint. In the boxplot, the median of the back box is higher
   
   
 
-## Numerical Summarys 
+## Numerical Summarys
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+
 
 ## Inferential Tests
 
