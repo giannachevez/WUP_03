@@ -37,7 +37,15 @@ favstats(alcohol~Seat,data=ucdavis1)
 
 
 The back seat data shows the highest values and most variability, with a median of 3.5 and mean of 8.56. The middle seat data is intermediate with a median of 1 and a mean of 3.33. The front seat data has the smallest values and least variability, with a median of 0 and a mean of 1.79.
+
 ## Inferential Tests
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The probability of obtaining these results is one out of ten thousand. Further analysis is required to determine which sets differ from one another.
 
 ## Conclusions
 
